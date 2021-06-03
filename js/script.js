@@ -25,7 +25,7 @@ for (i = 0; i < myArray.length; i++) {
     position[i]++;
 }
 
-position.sort(function(a, b){return a-b}); //The standard sort() functions doesn't work with numbers.
+position.sort(function(a, b){return a-b}); //The standard sort() function doesn't work with numbers.
 
 text = users + '<br/><br/>' + 'I cognomi che hai inserito sono in posizione: ' + position;
 
