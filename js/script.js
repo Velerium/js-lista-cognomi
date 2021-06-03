@@ -13,14 +13,20 @@ while (!users.includes('FATTO!')) {
     }
 }
 
+if (myArray.length === 0) {
+    alert('Non hai inserito neanche un cognome!')
+    location.reload();
+}
+
 users.sort();
 
 for (i = 0; i < myArray.length; i++) {
     position.push(' ' + users.indexOf(myArray[i]));
+    position[i]++;
 }
 
-position.sort(function(a, b){return a-b});
+position.sort(function(a, b){return a-b}); //The standard sort() functions doesn't work with numbers.
 
-text = users + '<br/><br/>' + 'I cognomi che hai inserito sono in posizione:' + position;
+text = users + '<br/><br/>' + 'I cognomi che hai inserito sono in posizione: ' + position;
 
 document.getElementById('output').innerHTML = text;
