@@ -3,7 +3,7 @@ var text;
 var myArray = []
 var position = [];
 
-while (!users.includes('FATTO!')) {
+for (;;) {
     var surname = prompt("Inserisci i cognomi, uno alla volta! Quando hai finito scrivi 'FATTO!'");
     if (surname === 'FATTO!') {
         break;
