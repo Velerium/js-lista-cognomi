@@ -8,6 +8,8 @@ for (;;) {
     if (surname === 'FATTO!') {
         break;
     } else {
+        surname = surname.charAt(0).toUpperCase() + surname.slice(1);
+        console.log(surname);
         users.push(' ' + surname);
         myArray.push(' ' + surname);
     }
